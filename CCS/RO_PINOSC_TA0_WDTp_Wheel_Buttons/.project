@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>RO_PINOSC_TA0_WDTp_Wheel_Buttons</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>com.ti.ccstudio.managedbuild.core.ccsNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Application</name>
+			<type>2</type>
+			<locationURI>EXAMPLE_ROOT/RO_PINOSC_TA0_WDTp_Wheel_Buttons</locationURI>
+		</link>
+		<link>
+			<name>Library</name>
+			<type>2</type>
+			<locationURI>LIBRARY_ROOT</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>
