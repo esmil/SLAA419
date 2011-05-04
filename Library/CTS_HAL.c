@@ -1508,8 +1508,12 @@ void TI_CTS_fRO_COMPB_TA1_SW_HAL(const struct Sensor *group, unsigned int *count
 
 #ifdef WDT_GATE
 // Watchdog Timer interrupt service routine
+#ifdef __GNUC__
+interrupt(WDT_VECTOR) watchdog_timer(void)
+#else
 #pragma vector=WDT_VECTOR
 __interrupt void watchdog_timer(void)
+#endif
 {
     __bic_SR_register_on_exit(LPM3_bits);           // Exit LPM3 on reti
 }

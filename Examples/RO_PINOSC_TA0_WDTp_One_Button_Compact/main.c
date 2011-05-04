@@ -89,8 +89,12 @@ void main(void)
 /******************************************************************************/
 // Timer0_A0 Interrupt Service Routine: Disables the timer and exists LPM3  
 /******************************************************************************/
+#ifdef __GNUC__
+interrupt(TIMERA0_VECTOR) ISR_Timer0_A0(void)
+#else
 #pragma vector=TIMER0_A0_VECTOR
 __interrupt void ISR_Timer0_A0(void)
+#endif
 {
   TA0CTL &= ~(MC_1);
   TA0CCTL0 &= ~(CCIE);
